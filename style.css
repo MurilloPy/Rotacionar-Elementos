@@ -1,0 +1,36 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    border: 0;
+
+}
+
+:root{
+
+    background-color: aliceblue;
+
+}
+
+.box{
+
+    
+    background:linear-gradient(red, blue);
+    box-shadow: 0 4px 10px black;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px 5px 50px;
+    position: relative;
+    top:50px;
+    left: 100px;
+    transform: rotate(45deg);
+
+}
+
+.box:hover{
+
+    transition: 0.3s ease;
+    transform: rotate(80deg);
+
+}

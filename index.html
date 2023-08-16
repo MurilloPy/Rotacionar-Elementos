@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .rotate-element {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    transition: transform 0.5s ease; /* Transição suave para a transformação */
+  }
+</style>
+</head>
+<body>
+
+<div class="rotate-element" id="rotatable"></div>
+
+<script>
+  const rotatableElement = document.getElementById("rotatable");
+  let rotated = false;
+
+  rotatableElement.addEventListener("click", () => {
+    if (!rotated) {
+      rotatableElement.style.transform = "rotate(45deg)";
+    } else {
+      rotatableElement.style.transform = "rotate(0deg)";
+    }
+    rotated = !rotated;
+  });
+</script>
+
+</body>
+</html>
